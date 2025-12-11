@@ -15,11 +15,11 @@ import LoadingSpinner from '../shared/LoadingSpinner';
 
 // ============= GENERADOR DE DATOS MOCK =============
 const generateInventariosData = () => {
-  const operarios = ['Juan Pérez', 'María García', 'Carlos López', 'Ana Martínez', 'Pedro Sánchez', 'Laura Torres'];
+  const operarios = ['Juan Perez', 'Maria Garcia', 'Carlos Lopez', 'Ana Martinez', 'Pedro Sanchez', 'Laura Torres'];
   const zonas = ['Zona A', 'Zona B', 'Zona C', 'Zona D', 'Zona E'];
-  const categorias = ['Electrónica', 'Alimentos', 'Textil', 'Hogar', 'Farmacia'];
-  const tiposInventario = ['Cíclico', 'Anual', 'Sorpresa', 'Por Demanda'];
-  const dias = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
+  const categorias = ['Electronica', 'Alimentos', 'Textil', 'Hogar', 'Farmacia'];
+  const tiposInventario = ['Ciclico', 'Anual', 'Sorpresa', 'Por Demanda'];
+  const dias = ['Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab', 'Dom'];
   
   // Operaciones de inventario individuales
   const operaciones = [];
@@ -55,7 +55,7 @@ const generateInventariosData = () => {
       ubicacionesRevisadas: Math.floor(Math.random() * 50) + 10,
       reconteos: Math.random() > 0.8 ? Math.floor(Math.random() * 3) + 1 : 0,
       estado: diferencias === 0 ? 'Exacto' : diferencias <= 5 ? 'Aceptable' : 'Con Diferencias',
-      turno: fecha.getHours() < 14 ? 'Mañana' : 'Tarde'
+      turno: fecha.getHours() < 14 ? 'Ma?ana' : 'Tarde'
     });
   }
   

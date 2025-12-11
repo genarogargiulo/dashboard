@@ -107,7 +107,7 @@ export const generateMockData = (numOperaciones = 50) => {
           ? (cantTraspasada / cantATranspasar * 100).toFixed(2)
           : 0,
         FECHA_OPERACION: opDate.toISOString().split('T')[0],
-        AÑO: opDate.getFullYear(),
+        A?O: opDate.getFullYear(),
         MES: opDate.getMonth() + 1,
         SEMANA: Math.ceil((opDate.getDate() + new Date(opDate.getFullYear(), 0, 1).getDay()) / 7),
         HORA_TRASPASO: traspasoDate.getHours(),
